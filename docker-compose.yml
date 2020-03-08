@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   lms:
-    image: varrcan/logitech-media-server:v1
+    image: varrcan/docker-image-lms
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - squeezebox:/srv/squeezebox
