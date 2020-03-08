@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  lms:
+    image: varrcan/logitech-media-server:v1
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - squeezebox:/srv/squeezebox
+      - ${AUDIO_DIR}:/srv/music:ro
+    ports:
+      - "9000:9000"
+      - "9090:9090"
+      - "3483:3483"
+      - "3483:3483/udp"
+    restart: always
+
+volumes:
+  squeezebox:
