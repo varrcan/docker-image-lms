@@ -2,7 +2,8 @@ version: '3.3'
 
 services:
   lms:
-    image: varrcan/docker-image-lms
+    container_name: lms
+    image: varrcan/docker-image-lms:latest
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./squeezebox:/srv/squeezebox
