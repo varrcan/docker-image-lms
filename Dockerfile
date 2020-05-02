@@ -18,7 +18,7 @@ RUN apt-get update && \
 		rm -rf /var/lib/apt/lists/* \
 
 VOLUME $SQUEEZE_VOL
-EXPOSE 3483 3483/udp 9000 9090
+EXPOSE 3483 3483/udp 1900/udp 9000 9090
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh

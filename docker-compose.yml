@@ -13,6 +13,7 @@ services:
       - "9090:9090"
       - "3483:3483"
       - "3483:3483/udp"
+      - "1900:1900/udp"
     restart: always
 
 volumes:
